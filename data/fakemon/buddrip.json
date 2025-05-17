@@ -1,0 +1,25 @@
+{
+  "name": "Buddrip",
+  "id": 3,
+  "types": ["Water", "Grass"],
+  "base_stats": {
+    "hp": 50,
+    "attack": 40,
+    "defense": 50,
+    "sp_attack": 60,
+    "sp_defense": 60,
+    "speed": 55
+  },
+  "exp_yield": 62,
+  "evolution": {
+    "to": "Floravine",
+    "level": 16
+  },
+  "abilities": ["Rain Dish", "Sap Sipper"],
+  "moves": {
+    "1": ["Splash", "Absorb"],
+    "6": ["Water Gun"],
+    "11": ["Growth"],
+    "17": ["Razor Leaf"]
+  }
+}
