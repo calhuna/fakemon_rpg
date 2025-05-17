@@ -1,3 +1,5 @@
+import os
+os.environ['SDL_AUDIODRIVER'] = 'dummy'
 import pygame
 from engine.overworld import Overworld
 from screens.wild_battle import WildBattleScreen
