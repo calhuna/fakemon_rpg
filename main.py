@@ -1,5 +1,6 @@
 import pygame
 from engine.overworld import Overworld
+from screens.wild_battle import WildBattleScreen
 
 pygame.init()
 
@@ -21,5 +22,15 @@ while running:
 
     pygame.display.flip()
     clock.tick(60)
+
+    def main():
+        pygame.init()
+        screen = pygame.display.set_mode((640, 400))
+        pygame.display.set_caption("Fakemon Battle Test")
+
+        battle_screen = WildBattleScreen(screen)
+        battle_screen.run()
+
+        pygame.quit()
 
 pygame.quit()
