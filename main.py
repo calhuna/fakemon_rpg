@@ -1,17 +1,20 @@
-import os
-os.environ['SDL_AUDIODRIVER'] = 'dummy'
 import pygame
+from engine.game import Game
 
 pygame.init()
 screen = pygame.display.set_mode((640, 480))
-pygame.display.set_caption("Test Window")
+clock = pygame.time.Clock()
+game = Game(screen)
 
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    screen.fill((0, 0, 0))  # Fill screen black
+
+    game.update()
+    game.draw()
     pygame.display.flip()
+    clock.tick(60)
 
 pygame.quit()

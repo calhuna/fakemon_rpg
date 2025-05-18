@@ -1,0 +1,4 @@
+[
+  {"name": "Embercub", "type": ["Fire"], "hp": 30, "attack": 15, "defense": 10},
+  {"name": "Aqualyte", "type": ["Water"], "hp": 28, "attack": 12, "defense": 14}
+]
